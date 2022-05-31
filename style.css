@@ -1,7 +1,8 @@
+/*Fond d'écran img*/
 .container {
   background-size: cover;
 }
-
+/*Texte sur le fond d'écran*/
 .container .text {
   z-index: 1;
   position: absolute;
@@ -13,4 +14,62 @@
   top: 30%;
   color: white;
   width: 100%;
+}
+/* MediaQueries(responsive) */
+/*Style smartphones et petites tablettes en portrait*/
+@media screen and (min-width: 720px) {
+  .navbar {
+    font-size: auto;
+  }
+  .container {
+    background-size: cover;
+    width: 100%;
+    height: auto;
+  }
+  .container .text {
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    left: 0;
+    right: 75%;
+    top: 30%;
+    color: white;
+    width: 100%;
+  }
+}
+/* Style PC portable */
+@media screen and (min-width: 900px) {
+  .navbar {
+    font-size: auto;
+  }
+  .container {
+    background-size: cover;
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Style ordinateur de bureau */
+@media screen and (min-width: 1400px) {
+  .navbar {
+    font-size: auto;
+  }
+  .img {
+    width: 100%;
+    height: auto;
+  }
+  .container .text {
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    left: 0;
+    right: 75%;
+    top: 30%;
+    color: white;
+    width: 100%;
+  }
 }
