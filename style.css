@@ -1,1 +1,16 @@
+.container {
+  background-size: cover;
+}
 
+.container .text {
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+  left: 0;
+  right: 75%;
+  top: 30%;
+  color: white;
+  width: 100%;
+}
